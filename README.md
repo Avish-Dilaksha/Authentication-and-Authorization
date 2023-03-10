@@ -1,0 +1,1 @@
+In this project my aim is to create a simple login application using JWT authentication,  and authorization
