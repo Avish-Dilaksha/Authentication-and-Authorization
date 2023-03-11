@@ -1,24 +1,24 @@
 const mongoose = require('mongoose')
 
-const UserSchema = new mongoose.Schema({
+const UserLogSchema = new mongoose.Schema({
     name: {
-        trype: String,
-        required: [true, 'Please provide User name'],
+        type: String,
+        required: true,
         minlength: 3,
         Maxkength: 50
     },
     email: {
-        trype: String,
-        required: [true, 'Please provide Email'],
+        type: String,
+        required: true,
         minlength: 3,
         Maxkength: 15
     },
     password: {
-        trype: String,
-        required: [true, 'Please provide Password'],
+        type: String,
+        required: true,
         minlength: 3,
         Maxkength: 15
     },
 })
 
-module.exports = mongoose.model("Users", UserSchema)
+module.exports = mongoose.model("UsersList", UserLogSchema)
